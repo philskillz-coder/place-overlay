@@ -10,7 +10,7 @@
 // @downloadURL  https://github.com/PlaceDE-Official/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
 // ==/UserScript==
 
-var overlayImage = null;
+let overlayImage = null;
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
         const canvasContainer = document.querySelector("garlic-bread-embed").shadowRoot.querySelector("div.layout").querySelector("garlic-bread-canvas").shadowRoot.querySelector("div.container");
